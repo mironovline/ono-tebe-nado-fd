@@ -17,7 +17,7 @@
 .header__menu-list {
     display: flex;
     justify-content: space-around;
-    gap: 1px;
+    gap: 30px;
     font-weight: 400;
     font-size: 18px;
     list-style: circle;
@@ -52,10 +52,11 @@
 
 .cover {
     position: relative;
-    min-height: 728px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+   
     
         
 }
@@ -65,6 +66,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
    
 }
 .cover__title {
@@ -77,59 +79,68 @@
     padding-top: 165px;
     padding-left: 50px;
     padding-right: 50px;
+    
     color: #fff;
-    z-index: 1;
     text-transform: uppercase;
 }
 .cover__description {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 106px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    z-index: 1;
+    white-space: nowrap;
+    width: 1000px;
+    max-height: 51px;
+    padding: 135px 50px 50px 50px;
+    gap: 110px;
+
 }
 
 .cover__description-text {
+    display: block;
+    width: 637px;
     font-weight: 400;
     font-size: 22px;
     line-height: 127%;
     text-transform: uppercase;
+    word-spacing: 18px;
     color: #fff;
     z-index: 1;
+   
 }
 
 .bet-button {
+    display: block;
+   
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    padding: 12px 32px 11px 31px;
     border: 1px solid #fff;
     z-index: 1;
     background-color: transparent;
+    padding: 8.5px 32px 15.5px 31px;
+    margin-bottom: 6px;
+    
 }
 
 .aligned-text {
     display: block;
-    
-   
-    
+        
 }
 .aligned-text_center {
     display: block;
     text-align: center;
-    
+    padding-top: 19px;
+    padding-left: 28px;
     
 }
 
 .aligned-text_right {
     display: block;
     text-align: right;
-    
+    padding-top: 20px;
+    padding-left: 614px;
     
 }
 .letter-spacing-extended {
@@ -162,14 +173,14 @@
     display: flex;
     gap: 50px;
     list-style-type: none;
-    margin-left: 24px;
-    margin-right: 24px;
+  
     
 
 }
 .lots__card-list-item {
-    min-height: 596px;
-    width: 334px;
+   display: block;
+   width: 334px;
+   height: 596px;
 }
 
 .lots__look-more-link {
