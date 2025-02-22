@@ -29,6 +29,9 @@
 
 .address {
     font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
 }
 
 .header__address {
@@ -42,8 +45,8 @@
 
 .header__logo {
     display: block;
-    width: 148px;
-    height: 105px;
+    width: 138px;
+    height: 104px;
 }
 .header__logo-image {
     width: 100%;
@@ -143,16 +146,7 @@
     padding-left: 614px;
     
 }
-.letter-spacing-extended {
-    letter-spacing: 10px;
-    
-}
-.no-letter-spacing {
-    letter-spacing: normal;
-}
-.text__uppercased {
-    text-transform: uppercase;
-}
+
 .card-link {
     height: 100%;
 }
@@ -170,8 +164,9 @@
     color: #000;
 }
 .lots__card-list {
+    position: relative;
     display: flex;
-    gap: 50px;
+    gap: 26px;
     list-style-type: none;
   
     
@@ -180,12 +175,13 @@
 .lots__card-list-item {
    display: block;
    width: 334px;
-   height: 596px;
+   min-height: 596px;
 }
 
 .lots__look-more-link {
     width: 192px;
-    height: 25px;
+    height: 23px;
+    padding-top: 2px;
 }
 .card {
     position: relative;
@@ -250,19 +246,21 @@
 .about {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    gap: 72px;
+    gap: 70px;
+    
     margin-top: 120px;
     min-height: 728px;
 }
 
 .about__column {
     position: relative;
-    flex-direction: column;
-    
-    
+    flex-direction: column; 
+ 
 }
 
+.about__column-text-first {
+    padding-bottom: 20px;
+}
 
 .about__logo {
     display: flex;
@@ -284,8 +282,8 @@
 }
 
 .about__content {
-    margin-top: 133px;
-    margin-right: 24px;
+    padding-top: 48px;
+    padding-right: 24px;
     width: 693px;
     height: 449px;
 }
@@ -296,11 +294,30 @@
 
 .about__column-title {
 margin-top: 100px;
+font-weight: 700;
+font-size: 40px;
+text-transform: uppercase;
 }
 
 .about__column-text {
-    margin-top: 150px;
+    width: 693px;
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+
 }
+
+.about__column-text-first {
+    width: 690px;
+    margin-bottom: 5px;
+}
+
+.about__column-text-second {
+    width: 690px;
+    
+}
+
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -317,9 +334,12 @@ margin-top: 100px;
 .footer__menu-list {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     list-style-type: none;
     justify-self: center;
+    font-weight: 400;
+    font-size: 18px;
 }
 .footer__social {
     margin-bottom: 131px;
